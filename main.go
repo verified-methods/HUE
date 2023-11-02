@@ -25,13 +25,11 @@ func main() {
 	if err != nil {
 		fmt.Printf("Error: %s", err)
 	}
-
 	// Check the current state of the light
 	state := light.State
 	if err != nil {
 		fmt.Printf("Error: %s", err)
 	}
-
 	// If the light is on, turn it off; if it's off, turn it on
 	if state.On {
 		_ = light.Off()
